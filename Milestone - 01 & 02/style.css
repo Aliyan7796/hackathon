@@ -47,8 +47,8 @@
 }
 :root {
     --primary-color: #88AB8E; 
-    --secondary-color: rgb(66,66,66); 
-    --tertiary-color: rgb(44,44,44);
+    --secondary-color: rgb(254, 254, 254); 
+    --tertiary-color: rgb(46, 46, 46);
 }
 
 * {
@@ -199,7 +199,7 @@
     min-height: 100vh;
    
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(5, 5, 5);
 
 
 }
@@ -225,4 +225,3 @@
     flex-direction: column;
 
 }
-
