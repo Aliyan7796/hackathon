@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <nav class="navbar -flex align-items">
+        <button onclick="window.location.href='editForm.html';" class="btn btnEdit">EDIT</button>
+        <!-- <button onclick="printDocument()" class="btn">PRINT</button> -->
+    </nav>
+    <div class="main -flex justify-content">
+        <div class="head -flex">
+            <div class="basicInfo -flex m-1">
+                <span class="name">
+                    <h1 id="displayName">John Doe</h1>
+                </span>
+                <span class="profession">
+                    <h3 id="displayProfession">Software Developer</h3>
+                </span>
+            </div>
+            <div class="profilePic">
+                <!-- Profile Picture -->
+            </div>
+        </div>
+
+        <div class="content -flex">
+            <div class="left">
+                <div class="information -flex m-l m-b">
+                    <h1 class="m-b">Contact</h1>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/avatar.png" alt="" width="24px" class="i-1">
+                        <span class="gender" id="displayGender">Male</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/dob.png" alt="" width="24px" class="i-1">
+                        <span class="dob" id="displayDob">01-01-1990</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/phone.png" alt="" width="24px" class="i-1">
+                        <span class="phone" id="displayPhone">+1 234 567 8900</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/email.png" alt="" width="24px" class="i-1">
+                        <span class="email" id="displayEmail">john.doe@example.com</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/website.png" alt="" width="24px" class="i-1">
+                        <span class="website" id="displayWebsite">https://www.johndoe.com</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t">
+                        <img src="img/location.png" alt="" width="24px" class="i-1 m-b">
+                        <span class="location m-b" id="displayLocation">New York, USA</span>
+                    </div>
+                </div>
+
+                <div class="skills -flex justify-content m-l">
+                    <h1 class="m-b">Skills<img class="toggleSkills i-1 toggleBtn" src="img/down-arrow.png" alt="" width="24" height="24"></h1>
+                    <div class="skillContent">
+                        <h3 class="m-b">Programming</h3>
+                        <li class="m-l"><span class="p-r" id="displaySkill1">JavaScript</span></li>
+                        <li class="m-l"><span class="p-r" id="displaySkill2">React</span></li>
+                        <li class="m-l"><span class="p-r" id="displaySkill3">Node.js</span></li>
+                        <h3 class="m-b p-t">Languages</h3>
+                        <li class="m-l"><span class="p-r" id="displayLanguage1">English</span></li>
+                        <li class="m-l m-b"><span class="p-r" id="displayLanguage2">Spanish</span></li>
+                    </div>
+                </div>
+
+                <div class="certificate -flex justify-content m-l">
+                    <h1 class="p-t">Certificate <img class="toggleCertificate i-1 toggleBtn" src="img/down-arrow.png" alt="" width="24" height="24"></h1>
+                    <div class="certificateContent">
+                        <li class="m-l p-t"><span id="displayCert1">Certified Web Developer</span></li>
+                        <li class="m-l"><span id="displayCert2">Advanced JavaScript</span></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="summary -flex justify-content m-l m-b">
+                    <h1>Summary</h1>
+                    <p id="displaySummary">Highly motivated and skilled software developer with 5+ years of experience in creating dynamic web applications and improving user experiences. Proficient in modern web technologies and passionate about coding and problem-solving.</p>
+                </div>
+                <div class="education -flex justify-content m-l">
+                    <h1 class="m-b">Education</h1>
+                    <h3 class="university" id="displayUniversity">University of Example (2010 – 2014)</h3>
+                    <span class="universityDetails m-b p-t" id="displayUniversityDetails">Bachelor's Degree in Computer Science</span>
+                    <h3 class="college" id="displayCollege">Example College</h3>
+                    <span class="collegeDetails m-b p-t" id="displayCollegeDetails">Associate Degree in Web Development</span>
+                    <h3 class="school" id="displaySchool">Example High School</h3>
+                    <span class="schoolDetails m-b p-t" id="displaySchoolDetails">High School Diploma</span>
+                </div>
+                <div class="experience -flex justify-content m-l m-t p-t">
+                    <h1 class="m-b">Experience</h1>
+                    <h3 class="experience" id="displayExperienceCompany1">Tech Corp</h3>
+                    <span class="experienceDetails m-b p-t m-l" id="displayExperiencePosition1">Senior Developer</span>
+                    <h3 class="experience-2" id="displayExperienceCompany2">Web Solutions</h3>
+                    <span class="experienceDetails-2 m-b p-t m-l" id="displayExperiencePosition2">Junior Developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <style>
+        /* Basic styling for the edit button */
+        .btnEdit {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btnEdit:hover {
+            background-color: #0056b3;
+        }
+
+        .edit-input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .edit-mode * {
+            display: none;
+        }
+
+        .edit-mode .edit-input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar -flex align-items">
+        <button id="editBtn" class="btnEdit">EDIT</button>
+    </nav>
+    <div class="main -flex justify-content">
+        <div class="head -flex">
+            <div class="basicInfo -flex m-1">
+                <span class="nameSpan">
+                    <h1 id="name">Saim Ahmed</h1>
+                </span>
+                <span class="profession">
+                    <h3 id="profession">Web Designer</h3>
+                </span>
+            </div>
+            <div class="profilePic" id="profilePic"></div>
+        </div>
+
+        <div class="content -flex">
+            <div class="left">
+                <div class="information -flex m-l m-t p-t">
+                    <h1 class="p-b m-t">Contact</h1>
+                    <div class="-flex align-items g-1 m-t" id="contact-gender">
+                        <img src="img/avatar.png" alt="" width="24px" class="i-1">
+                        <span class="gender" id="gender">Male</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t" id="contact-dob">
+                        <img src="img/dob.png" alt="" width="24px" class="i-1">
+                        <span class="dob" id="dob">28-11-2002</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t" id="contact-phone">
+                        <img src="img/phone.png" alt="" width="24px" class="i-1">
+                        <span class="phone" id="phone">+92 123 4567890</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t" id="contact-email">
+                        <img src="img/email.png" alt="" width="24px" class="i-1">
+                        <span class="email" id="email">abcd@gmail.com</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t" id="contact-website">
+                        <img src="img/website.png" alt="" width="24px" class="i-1">
+                        <span class="website" id="website">https://www.linkedin.com/in/saimahmed24</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t" id="contact-location">
+                        <img src="img/location.png" alt="" width="24px" class="i-1 m-b">
+                        <span class="location m-b" id="location">Karachi, Pakistan</span>
+                    </div>
+                </div>
+
+                <div class="skills -flex justify-content m-l m-b">
+                    <div class="skills-header -flex align-items">
+                        <h1 class="m-b" id="skills-header">Skills</h1>
+                        <img class="toggleSkills i-1 toggleBtn" src="img/down-arrow.png" alt="" width="24" height="24">
+                    </div>
+                    <div class="skillContent" id="skillsContainer">
+                        <div class="skill-entry">
+                            <h3 class="m-b" id="skill1">Computer Skills</h3>
+                            <ul class="skill-tags m-l p-1" id="skillTags1">
+                                <li class="m-l"><span class="p-r" id="skillTag1">JavaScript</span></li>
+                                <li class="m-l"><span class="p-r" id="skillTag2">HTML</span></li>
+                                <li class="m-l"><span class="p-r" id="skillTag3">CSS</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-entry m-l">
+                            <h3 class="m-b p-t" id="skill2">Design Skills</h3>
+                            <ul class="skill-tags" id="skillTags2">
+                                <li class="m-l"><span class="p-r" id="skillTag4">Photoshop</span></li>
+                                <li class="m-l"><span class="p-r" id="skillTag5">Illustrator</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uncomment and modify as needed -->
+                <!-- <div class="certificate -flex justify-content m-l">
+                    <div class="certificate-header -flex align-items">
+                        <h1 class="p-t" id="certifications-header">Certifications</h1>
+                        <img class="toggleCertificate i-1 toggleBtn" src="img/down-arrow.png" alt="" width="24" height="24">
+                    </div>
+                    <div class="certificateContent" id="certificate-content m-1">
+                        <li class=""><span id="certificate">Certified Web Developer</span></li>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="right">
+                <div class="summary -flex justify-content m-l m-b">
+                    <h1 id="summary-header">Summary</h1>
+                    <p id="summary-text">Creative and dedicated Web Designer with over 5 years of experience in building visually appealing and user-friendly websites. Proven track record in designing responsive layouts and enhancing user experiences. Passionate about creating beautiful and functional designs using the latest web technologies.</p>
+                </div>
+                <div class="education -flex justify-content m-l">
+                    <h1 class="m-b" id="education-header">Education</h1>
+                    <h3 class="university" id="education-university">Creative University (2015 – 2019)</h3>
+                    <span class="universityDetails m-b p-t" id="education-university-details">Bachelor's Degree in Graphic Design</span>
+                    <h3 class="college" id="education-college">Tech College</h3>
+                    <span class="collegeDetails m-b p-t" id="education-college-details">Associate Degree in Web Development</span>
+                    <h3 class="school" id="education-school">High School</h3>
+                    <span class="schoolDetails m-b p-t" id="education-school-details">High School Diploma</span>
+                </div>
+                <div class="experience -flex justify-content m-l m-t p-t">
+                    <h1 class="m-b" id="experience-header">Experience</h1>
+                    <h3 class="experience" id="experience-company-1">Design Studio Inc.</h3>
+                    <span class="experienceDetails m-b p-t m-l" id="experience-position-1">Lead Designer</span>
+                    <h3 class="experience-2" id="experience-company-2">Creative Agency</h3>
+                    <span class="experienceDetails-2 m-b p-t m-l" id="experience-position-2">Junior Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

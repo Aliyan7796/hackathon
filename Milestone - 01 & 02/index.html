@@ -1,0 +1,121 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="main -flex  justify-content">
+        <div class="head -flex">
+            <div class="basicInfo -flex m-1">
+                <span class="name">
+                    <h1>Saim Ahmed Qazi</h1>
+                </span>
+                <span class="profession">
+                    <h3>Graphic Designer</h3>
+                </span>
+            </div>
+            <div class="profilePic"></div>
+        </div>
+
+        <div class="content -flex">
+
+            <div class="left">
+                <div class="information -flex m-l m-b">
+                    <h1 class="m-b">Contact</h1>
+                    <div class="-flex align-items g-1 m-t"><img src="img/avatar.png" alt="" width="24px" class="i-1">
+                        <span class="gender">Male</span>
+                    </div>
+                    <div class="-flex  align-items g-1 m-t"><img src="img/dob.png" alt="" width="24px" class="i-1">
+                        <span class="dob">28-11-2002</span>
+                    </div>
+                    <div class="-flex  align-items g-1 m-t"><img src="img/phone.png" alt="" width="24px" class="i-1">
+                        <span class="phone">+92 123 4567890</span>
+                    </div>
+                    <div class="-flex  align-items g-1 m-t"><img src="img/email.png" alt="" width="24px" class="i-1">
+                        <span class="email">abcd@gmail.com</span>
+                    </div>
+                    <div class="-flex align-items g-1 m-t"><img src="img/website.png" alt="" width="24px" class="i-1">
+                        <span class="website">https://www.linkedin.com/in/saimahmed24
+                    </div>
+                    <div class="-flex align-items g-1 m-t"><img src="img/location.png" alt="" width="24px" class="i-1 m-b">
+                        <span class="location m-b">Karachi, Pakistan</span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="skills -flex justify-content m-l">
+                    <h1 class="m-b ">Skills<img class="toggleSkills i-1 toggleBtn" src="img/down-arrow.png" alt=""
+                            width="24" height="24"></h1>
+
+                    <div class="skillContent">
+                        <h3 class="m-b ">Computer</h3>
+                        <li class="m-l"><span class="  p-r">HTML</span></li>
+                        <li class="m-l"><span class="  p-r">CSS</span></li>
+                        <li class="m-l"><span class="  p-r">Typescript</span></li>
+
+                        <h3 class="m-b p-t">Languages</h3>
+                        <li class="m-l"><span class=" p-r">English</span></li>
+                        <li class="m-l m-b"><span class=" p-r">Urdu</span></li>
+                    </div>
+                </div>
+
+                <div class="certificate -flex justify-content m-l">
+                    <h1 class="p-t">Certificate <img class="toggleCertificate i-1 toggleBtn" src="img/down-arrow.png" alt=""
+                            width="24" height="24"></h1>
+                    <div class="certificateContent">
+                        <li class="m-l p-t"><span>Ui / Ux Design</span></li>
+                        <li class="m-l "><span>Graphic Design</span></li>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="right">
+                <div class="summary -flex justify-content m-l m-b">
+                    <h1>Summary</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum fuga incidunt perspiciatis hic
+                        vel fugiat, quas id debitis eaque consequatur similique assumenda libero accusamus eum? Aliquid
+                        voluptatibus nesciunt vero cupiditate dolorum soluta vel quo expedita dignissimos quos corrupti
+                        ullam iste, ratione numquam? Ab autem temporibus incidunt facilis, sapiente quibusdam qui.</p>
+                </div>
+                <div class="education -flex justify-content m-l ">
+                    <h1 class="m-b">Education</h1>
+                    <h3 class="university">Sir Syed University of Education & Technology (2022 – 2026)</h3>
+                    <span class="universityDetails m-b p-t">Bachelors in Computer Science </span>
+                    <h3 class="college">Intermediate</h3>
+                    <span class="collegeDetails m-b p-t">Govt. Degree Boys' College, Jauhar</span>
+                    <h3 class="school">Matriculation</h3>
+                    <span class="schoolDetailsm-b p-t">Gulistan Shah Abdul Latif School</span>
+                </div>
+                <div class="experience -flex justify-content m-l m-t p-t">
+                    <h1 class="m-b">Experience</h1>
+                    <h3 class="experience ">Kuro Solutions</h3>
+                    <span class="experienceDetails m-b p-t m-l ">Senior Designer</span>
+                    <h3 class="experience-2 ">SMEC'22</h3>
+                    <span class="experienceDetails-2  m-b p-t m-l">Volunteer</span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

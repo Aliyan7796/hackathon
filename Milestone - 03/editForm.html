@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <!-- <link rel="stylesheet" href="utility.css"> -->
+</head>
+
+<body>
+    <div class="main -flex justify-content">
+        <h1>Fill Your Information</h1>
+        <form id="dataForm" class="form">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput">
+
+            <label for="professionInput">Profession:</label>
+            <input type="text" id="professionInput">
+
+            <label for="genderInput">Gender:</label>
+            <input type="text" id="genderInput">
+
+            <label for="dobInput">Date of Birth:</label>
+            <input type="text" id="dobInput">
+
+            <label for="phoneInput">Phone:</label>
+            <input type="text" id="phoneInput">
+
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput">
+
+            <label for="websiteInput">Website:</label>
+            <input type="text" id="websiteInput">
+
+            <label for="locationInput">Location:</label>
+            <input type="text" id="locationInput">
+
+            <!-- Skills Section -->
+            <fieldset id="skillsFieldset">
+                <legend>Skills</legend>
+                <div id="skillsContainer">
+                    <div class="skill-entry">
+                        <label for="skillInput1">Skill 1:</label>
+                        <input type="text" id="skillInput1" class="skillInput">
+                        <div class="tags-container" id="skillTagsContainer1">
+                            <label for="skillTagInput1">Skill Tags:</label>
+                            <input type="text" id="skillTagInput1-1" class="tagInput">
+                            <input type="text" id="skillTagInput1-2" class="tagInput">
+                            <input type="text" id="skillTagInput1-3" class="tagInput">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="addSkillBtn">Add Another Skill</button>
+            </fieldset>
+<!-- 
+            <label for="certificateInput">Certificate:</label>
+            <input type="text" id="certificateInput"> -->
+
+            <label for="summaryInput">Summary:</label>
+            <textarea id="summaryInput"></textarea>
+
+            <label for="educationUniversityInput">University:</label>
+            <input type="text" id="educationUniversityInput">
+
+            <label for="educationUniversityDetailsInput">University Details:</label>
+            <input type="text" id="educationUniversityDetailsInput">
+
+            <label for="educationCollegeInput">College:</label>
+            <input type="text" id="educationCollegeInput">
+
+            <label for="educationCollegeDetailsInput">College Details:</label>
+            <input type="text" id="educationCollegeDetailsInput">
+
+            <label for="educationSchoolInput">School:</label>
+            <input type="text" id="educationSchoolInput">
+
+            <label for="educationSchoolDetailsInput">School Details:</label>
+            <input type="text" id="educationSchoolDetailsInput">
+
+            <label for="experienceCompany1Input">Experience Company 1:</label>
+            <input type="text" id="experienceCompany1Input">
+
+            <label for="experiencePosition1Input">Experience Position 1:</label>
+            <input type="text" id="experiencePosition1Input">
+
+            <label for="experienceCompany2Input">Experience Company 2:</label>
+            <input type="text" id="experienceCompany2Input">
+
+            <label for="experiencePosition2Input">Experience Position 2:</label>
+            <input type="text" id="experiencePosition2Input">
+
+            <button type="button" id="saveDataBtn">Save Data</button>
+            <button onclick="window.location.href='index.html';" id="cancelBtn">Cancel</button>
+        </form>
+    </div>
+
+    <script src="formScript.js"></script>
+</body>
+
+</html>
