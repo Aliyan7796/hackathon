@@ -169,7 +169,7 @@ nav  {
     width: 80vw;
     min-height: 100vh;
     background-color: var(--secondary-color);
-    color: white;
+    color: black;
 }
 
 .right h1, h3 {
